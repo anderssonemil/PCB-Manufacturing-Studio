@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+# Preserve pinned upstream bytes and hashed demo inputs exactly.
+helix/LibLaserCut-source/** -text
+examples/synthetic-job/inputs/** -text
+*.png -text
+*.jpg -text
+*.JPG -text

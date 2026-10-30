@@ -1,0 +1,9 @@
+# Legacy SVG/DXF engine example; the desktop uses its reviewed process settings.
+# These are example trial values, not universal laser calibration.
+[laser]
+effective_width_mm = 0.075
+overlap_percent = 33.3333
+[isolation]
+lines = 5
+[geometry]
+curve_tolerance_mm = 0.001

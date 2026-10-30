@@ -1,0 +1,20 @@
+{
+  "schema": "pcb-isolator-export",
+  "version": 1,
+  "board_name": "Synthetic offline demo",
+  "units": "mm",
+  "origin": "absolute",
+  "mirrored": false,
+  "files": {
+    "copper": "inputs/demo-B_Cu.gbr",
+    "outline": "inputs/outline.dxf",
+    "drills": [
+      "inputs/demo.drl"
+    ]
+  },
+  "sha256": {
+    "inputs/demo-B_Cu.gbr": "fc603d04f508ca50f034b912c3bf7a475890906a16a19e251145eff303bd020a",
+    "inputs/demo.drl": "aab9ad94462ed3b6c9b236f4c32ece00821df42445196db8d43bb4b5af991112",
+    "inputs/outline.dxf": "f8b4299887306676f697d0d83905f7762b2b3c9b488148fac694dcd2629849ea"
+  }
+}

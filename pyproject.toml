@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcb-isolator"
+version = "0.3.0rc1"
+description = "KiCad manufacturing workbench for laser isolation and CNC drilling/profile toolpaths"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Emil Andersson"}]
+dependencies = ["pygerber[shapely]==3.0.0a4", "shapely>=2,<3", "ezdxf>=1.4,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+gui = ["PySide6>=6,<7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pcb_isolator = ["*.js"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

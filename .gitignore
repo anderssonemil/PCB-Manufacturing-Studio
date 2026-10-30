@@ -1,0 +1,37 @@
+# Environments, rebuilt assets and generated output
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.tools/
+build/
+dist/
+generated/
+*.log
+/*.zip
+*.exe
+*.class
+helix/java/
+helix/build/
+helix/LibLaserCut-source/test-output/
+# Private projects, calibration originals, settings and historical session notes
+local-boards/
+local-machine/
+jobs/
+_norton_/
+helix-settings.json
+laser-transmissions.jsonl
+config.toml
+OPEN-TASKS.md
+TESTING-BACKLOG.md
+PROJECT-CHECKPOINT-*.md
+LAGUNA-SWIFT-NOTES.md
+docs/laser-calibration-handoff-*/
+docs/laser-photo-recheck.json
+docs/LASER-CALIBRATION-INTEGRATION.md
+# Local credentials / secrets must never enter source history
+.env
+.env.*
+*.pem
+*.key

@@ -1,0 +1,32 @@
+PCB Manufacturing Studio / PCB Isolator - 0.3.0-rc.1
+Windows x64 portable review milestone
+
+Extract the COMPLETE ZIP, then open PCB Isolator.exe.
+Keep _internal beside the executable. Python, Qt, geometry libraries and the
+private Java/LibLaserCut encoder are included. VS Code, Python and Java do not
+need to be installed on the laptop.
+
+KiCad 8/9 is needed separately to open/export a saved KiCad board and load
+uncached reference layers. KiCad 9 was used during development. Existing
+manufacturing exports can be opened without re-exporting their saved inputs.
+
+Laser: configure the Helix IP and process settings; review before explicitly
+sending. Sending queues a job; it does not start the laser. Focus, air and
+extraction are manual. Router: export one MMG per tool; transfer/run those
+programs on the configured controller. This app does not directly drive the CNC.
+
+Workflow: Open saved board > choose alignment > Generate preview > review >
+Generate outputs. Locate with pins, tape the board, REMOVE pins before routing.
+Settings: %LOCALAPPDATA%\PCB Isolator
+Output: Manufacturing Output beside the selected KiCad project by default.
+Internal project history: .pcb-isolator\jobs beside the board.
+Existing settings/history are preserved when extracting an update elsewhere.
+
+Print 1:1 in generated reviews uses Actual size / 100%, with scale bars to check.
+Save router ZIP shares only the review; extract it before opening the HTML.
+Main reference layers are display-only and never change generated paths.
+
+This is an unsigned, hardware-specific test milestone. A working setup on one
+machine is not universal validation of tools, materials, controllers or lasers.
+See Help / workflow guide and THIRD-PARTY-LICENSES. Original app code is MIT;
+third-party code retains its own terms and notices.

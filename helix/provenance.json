@@ -1,0 +1,28 @@
+{
+  "liblasercut": {
+    "repository": "https://github.com/t-oster/LibLaserCut",
+    "commit": "90ccd5f1d381a6dc1f3a67be686b99509ec0b6d4",
+    "source_modified": false,
+    "license": "LGPL-3.0-or-later",
+    "source_directory": "LibLaserCut-source",
+    "use": "Core vector job serialization and Epilog Helix encoder; PCBHelixJob.java is the separate app bridge."
+  },
+  "java": {
+    "vendor": "Eclipse Temurin",
+    "version": "17.0.20.1+1",
+    "download_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip",
+    "archive_sha256": "e53a79c3c3d86865bd7e787903884331068e71321714ffd44f145785affc7cb0",
+    "runtime_modules": [
+      "java.base",
+      "java.datatransfer",
+      "java.desktop",
+      "java.prefs",
+      "java.xml"
+    ],
+    "global_installation": false
+  },
+  "notes": [
+    "Hardware settings and private calibration images are not part of this source manifest.",
+    "See docs/history.md for user-reported physical validation and its limits."
+  ]
+}

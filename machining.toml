@@ -1,0 +1,51 @@
+# Development values. Confirm actual tooling, material and feeds before cutting.
+[board]
+thickness_mm = 1.6
+breakthrough_mm = 0.3
+
+[machine]
+clearance_mm = 5.08
+approach_mm = 0.5
+park_z_mm = 20.32
+# Work coordinates preserve KiCad coordinates unless this common offset is set.
+origin_x_mm = 0.0
+origin_y_mm = 0.0
+# Top of the PCB is Z0. Spindle speed is set manually; M03/M05 remain automatic.
+
+[drilling]
+feed_mm_min = 127.0
+peck_mm = 0.7
+peck_retract_mm = 1.0
+peck_resume_gap_mm = 0.2
+# Optional per-size overrides, for example:
+# [[drilling.tools]]
+# diameter_mm = 1.0
+# peck_mm = 0.0  # zero disables pecking for this drill size
+
+[profile]
+# Placeholder 0.100 inch tool. Replace with actual measured tool diameter.
+tool_diameter_mm = 2.54
+feed_mm_min = 508.0
+plunge_mm_min = 127.0
+stepdown_mm = 0.95
+
+[spoilboard]
+# Independent depth below spoilboard Z0; development placeholder only.
+pin_hole_depth_mm = 5.0
+# Spoilboard material is separate from PCB material; pecking stays off here.
+peck_mm = 0.0
+
+[alignment_pins]
+# Current workflow: tape the registered PCB and REMOVE ALL PINS before cutting.
+pins_removed_before_machining = true
+# Legacy compatibility settings below are ignored while pins are removed.
+height_above_board_mm = 10.0
+xy_margin_mm = 2.0
+vertical_margin_mm = 2.0
+# Provisional shank envelope only. Increase if a larger tool/holder section
+# enters the pin height during cutting; actual assembly clearance needs checking.
+tool_envelope_diameter_mm = 3.175
+# Ordering reference only; the first XY move goes directly to the first feature.
+# Operator tool-height setting must leave Z at machine maximum.
+start_x_mm = 0.0
+start_y_mm = 0.0
