@@ -37,6 +37,8 @@ The main workspace, laser paths and CNC review from a small, openly licensed 555
 
 The sample design is by Franz Louis Vigilar, MIT licensed. These captures show B.Cu from a two-sided source board. No hardware job was sent for this demonstration. The header is conceptual artwork; [asset credits and source details](docs/media/README.md).
 
+**Try the interactive reviews:** [download/open the real-board laser and router samples](examples/real-board-reviews/README.md). Each HTML file works independently and offline; GitHub itself displays HTML source.
+
 ## What it does
 
 - Imports the saved B.Cu artwork, round drills, outline and optional CNC Separation layer.
