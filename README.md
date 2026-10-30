@@ -1,5 +1,7 @@
 # PCB Manufacturing Studio
 
+![PCB manufacturing workflow: PC, Epilog Helix, etch and clean, Laguna Swift](docs/media/workflow-illustration.png)
+
 **Laser isolation, CNC drilling and board routing in one Windows app.**
 
 The application is currently named **PCB Isolator**. It turns a saved KiCad board
@@ -18,6 +20,22 @@ flowchart LR
     E --> C[CNC drilling, separation and board profile]
     A --> R[Portable HTML reviews and 1:1 paper checks]
 ```
+
+## See it in action
+
+The main workspace, laser paths and CNC review from a small, openly licensed 555 timer example:
+
+![Main workspace with alignment selection and laser settings](docs/media/main-workspace.png)
+
+| Laser isolation review | CNC router review |
+| --- | --- |
+| ![Laser beam paths](docs/media/laser-paths.png) | ![Router drilling and profile preview](docs/media/router-review.png) |
+
+**All router tools, in sequence — accelerated playback:**
+
+![Animated drilling and board profile sequence](docs/media/router-path-animation.gif)
+
+The sample design is by Franz Louis Vigilar, MIT licensed. These captures show B.Cu from a two-sided source board. No hardware job was sent for this demonstration. The header is conceptual artwork; [asset credits and source details](docs/media/README.md).
 
 ## What it does
 
